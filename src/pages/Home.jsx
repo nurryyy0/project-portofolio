@@ -2,6 +2,7 @@ import Siswa from "../components/Siswa";
 import Navbar from "../components/Navbar";
 import Counter from "../components/Counter";
 import Footer from "../components/Footer";
+import Link from 'next/link';
 
 function Home() {
   return (
@@ -43,15 +44,12 @@ function Home() {
           </p>
 
           {/* CTAs */}
-          <div className="animate-fadeUp animate-delay-4" style={S.ctaRow}>
-            <a href="/project" style={S.btnPrimary}>
-              View Projects
-              <span>→</span>
-            </a>
-            <a href="/about" style={S.btnGhost}>
-              About me
-            </a>
-          </div>
+          <Link href="/project" style={S.btnPrimary}>
+            View Projects <span>→</span>
+          </Link>
+          <Link href="/about" style={S.btnGhost}>
+            About me
+          </Link>
 
         </div>
       </section>
