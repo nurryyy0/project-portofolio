@@ -1,5 +1,8 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from 'next/link';
+
+
 
 // CATATAN: Pastikan file "nnn.png" sudah dimasukkan ke dalam folder /public/ di project Anda.
 // Tidak perlu lagi ada baris: import profilePhoto from "...";
@@ -89,9 +92,9 @@ function About() {
                   <span style={S.igBtnDot} />
                   @nnaoou_ ↗
                 </a>
-                <a href="/project" style={S.projectsBtn}>
-                  View Projects →
-                </a>
+                <Link to="/project" style={S.btnPrimary}>
+                      View Projects <span>→</span>
+                </Link>
               </div>
             </div>
 
